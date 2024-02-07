@@ -1,0 +1,39 @@
+.my-status-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.my-status-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.selected-mission {
+  margin-bottom: 20px;
+}
+
+.selected-mission h3 {
+  font-size: 18px;
+}
+
+.selected-mission p {
+  font-size: 16px;
+}
+
+.selected-rocket {
+  margin-bottom: 20px;
+}
+
+.selected-rocket h3 {
+  font-size: 18px;
+}
+
+.selected-rocket p {
+  font-size: 16px;
+}
+
+.selected-rocket img {
+  max-width: 200px;
+  border-radius: 8px;
+}

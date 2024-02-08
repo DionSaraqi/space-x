@@ -1,0 +1,48 @@
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-container {
+  margin-bottom: 20px;
+}
+
+.rockets-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.rocket-card {
+  position: relative; /* Add relative positioning */
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rocket-header {
+  text-align: center;
+}
+
+.rocket-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.rocket-description {
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.rocket-button {
+  position: absolute; /* Add absolute positioning */
+  bottom: 10px; /* Adjust bottom distance as needed */
+  left: 50%; /* Center the button horizontally */
+  transform: translateX(-50%); /* Center the button horizontally */
+}

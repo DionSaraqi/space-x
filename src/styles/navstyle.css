@@ -1,0 +1,39 @@
+nav {
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  width: 97%;
+  margin: 20px auto 0;
+  display: flex;
+  justify-content: space-between; /* Spread items horizontally */
+  align-items: center; /* Center items vertically */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  margin-right: 20px; /* Adjust margin between each link */
+}
+
+a {
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #4682b4;
+  font-size: 20px;
+}
+
+li img {
+  max-width: 80px; /* Adjust max-width as needed to make the image smaller */
+  margin-right: 20px; /* Add right margin to separate image from links */
+}

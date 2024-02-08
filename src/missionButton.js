@@ -10,7 +10,7 @@ const Button = ({ onClick, missionId, selectedMissionId }) => {
 
   return (
     <button onClick={handleClick} disabled={isDisabled}>
-      {selectedMissionId === missionId ? "Leave Mission" : "Action"}
+      {selectedMissionId === missionId ? "Leave Mission" : "Join Mission"}
     </button>
   );
 };

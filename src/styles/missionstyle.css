@@ -1,26 +1,44 @@
-.table-container {
-  margin: 20px auto;
-  max-width: 800px;
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
 }
 
-table {
+.missions-table-container {
+  max-width: 1500px; /* Adjust the maximum width as needed */
+  max-height: 600px;
+}
+
+.missions-table {
   width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add shadow */
 }
 
-th,
-td {
-  padding: 10px;
-  text-align: left;
+.missions-table th,
+.missions-table td {
+  border: none;
+  padding: 10px 20px;
   border-bottom: 1px solid #ddd;
 }
 
-th {
-  background-color: #f2f2f2;
+.missions-table th:first-child,
+.missions-table td:first-child {
+  border-top-left-radius: 30px; /* Apply border radius to top left corner */
 }
 
-td img {
-  max-width: 100px;
-  height: auto;
+.missions-table th:last-child,
+.missions-table td:last-child {
+  border-top-right-radius: 30px; /* Apply border radius to top right corner */
+}
+
+.missions-table th {
+  background-color: #f0f0f0;
+}
+
+.missions-table tbody tr {
+  border-bottom: 1px solid #ddd; /* Add border line between rows */
 }

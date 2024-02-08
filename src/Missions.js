@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { setSelectedMissionId } from "./actions";
-import Button from "./button";
+import Button from "./missionButton";
 import "./styles/missionstyle.css";
 
 const Missions = () => {
@@ -20,35 +20,35 @@ const Missions = () => {
   };
 
   return (
-    <div>
-      <h2>Missions Page</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Mission ID</th>
-            <th>Mission Name</th>
-            <th>Mission Description</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          {missions.map((mission) => (
-            <tr key={mission.mission_id}>
-              <td>{mission.mission_id}</td>
-              <td>{mission.mission_name}</td>
-              <td>{mission.description}</td>
-              <td>
-                {/* Pass selectedMissionId as a prop to Button component */}
-                <Button
-                  onClick={handleButtonClick}
-                  missionId={mission.mission_id}
-                  selectedMissionId={selectedMissionId}
-                />
-              </td>
+    <div class="page-container">
+      <div class="missions-table-container">
+        <table class="missions-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Status</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {missions.map((mission) => (
+              <tr key={mission.mission_id}>
+                <td>{mission.mission_id}</td>
+                <td>{mission.mission_name}</td>
+                <td>{mission.description}</td>
+                <td>
+                  <Button
+                    onClick={handleButtonClick}
+                    missionId={mission.mission_id}
+                    selectedMissionId={selectedMissionId}
+                  />
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 };

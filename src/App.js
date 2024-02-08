@@ -7,7 +7,6 @@ import rootReducer from "./reducers";
 import Rockets from "./Rockets";
 import Missions from "./Missions";
 import { fetchRockets, fetchMissions } from "./actions";
-import "./App.css";
 import NavBar from "./NavBar";
 import MyStatus from "./mypage";
 const store = createStore(rootReducer, applyMiddleware(thunk));

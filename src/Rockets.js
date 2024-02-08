@@ -21,45 +21,37 @@ const Rockets = () => {
   };
 
   return (
-    <div>
-      <h2>Rockets Page</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Image</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          {rockets.map((rocket) => (
-            <tr key={rocket.id}>
-              <td>{rocket.id}</td>
-              <td>{rocket.rocket_name}</td>
-              <td>{rocket.description}</td>
-              <td>
-                {rocket.flickr_images.map((imageUrl) => (
-                  <img
-                    key={imageUrl}
-                    src={imageUrl}
-                    alt="Rocket"
-                    style={{ width: "100px", height: "auto" }}
-                  />
-                ))}
-              </td>
-              <td>
-                <RocketButton
-                  onClick={handleButtonClick}
-                  rocketId={rocket.id}
-                  selectedRocketId={selectedRocketId}
-                />
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+    <div className="page-container">
+      <div className="title-container">
+        <h2>Rockets Page</h2>
+      </div>
+      <div className="rockets-container">
+        {rockets.map((rocket) => (
+          <div className="rocket-card" key={rocket.id}>
+            <div className="rocket-header">
+              <h3>{rocket.rocket_name}</h3>
+              <p>ID: {rocket.id}</p>
+            </div>
+            <div className="rocket-img">
+              <img
+                src={rocket.flickr_images[0]} // Assuming first image is used
+                alt="Rocket"
+              />
+            </div>
+            <div className="rocket-description">
+              <p>{rocket.description}</p>
+            </div>
+
+            <div className="rocket-button">
+              <RocketButton
+                onClick={handleButtonClick}
+                rocketId={rocket.id}
+                selectedRocketId={selectedRocketId}
+              />
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

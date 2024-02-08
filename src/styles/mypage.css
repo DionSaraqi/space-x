@@ -1,39 +1,39 @@
-.my-status-container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
+/* Define styles for the card container */
+.card-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-.my-status-heading {
-  font-size: 24px;
-  margin-bottom: 20px;
+/* Define styles for the card */
+.card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  width: 250px; /* Adjust width as needed */
+  text-align: center; /* Center align content */
+  margin: 0 25px;
 }
 
-.selected-mission {
-  margin-bottom: 20px;
+/* Define styles for the card header */
+.card-header {
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ccc;
+  border-radius: 10px 10px 0 0;
+  padding: 10px;
 }
 
-.selected-mission h3 {
-  font-size: 18px;
+/* Define styles for the card body */
+.card-body {
+  padding: 10px;
 }
 
-.selected-mission p {
-  font-size: 16px;
+/* Define styles for the rocket image */
+.card-body img {
+  max-width: 100%;
 }
 
-.selected-rocket {
-  margin-bottom: 20px;
-}
-
-.selected-rocket h3 {
-  font-size: 18px;
-}
-
-.selected-rocket p {
-  font-size: 16px;
-}
-
-.selected-rocket img {
-  max-width: 200px;
-  border-radius: 8px;
+/* Define styles for the title and description */
+.card-body p {
+  margin: 5px 0;
 }
